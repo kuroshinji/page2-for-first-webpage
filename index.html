@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Alex's Game Preference Survey Page</title>
+        <link rel="stylesheet" type="text/css" href="webpage.css">
+    </head>
+
+    <body>
+        <div class="navButtons">
+            <div>
+                <a class="home" href="file://wsl%24/Ubuntu/home/aauduong/projects/first-webpage/first-webpage/page1.html" target="">Home</a>
+            </div>
+
+            <div>
+                <a class="survey" href="file://wsl%24/Ubuntu/home/aauduong/projects/first-webpage/first-webpage/page2.html" target="">Survey</a>
+            </div>
+
+            <div>
+                <a class="links" href="file://wsl%24/Ubuntu/home/aauduong/projects/first-webpage/first-webpage/page3.html" target="">Links</a>
+            </div>
+
+            <div>
+                <a class="platforms" href="file://wsl%24/Ubuntu/home/aauduong/projects/first-webpage/first-webpage/page4.html" target="">Platform</a>
+            </div>
+        </div>
+
+        <form action="/form-handling-url" method="post">
+            <fieldset class="form">
+                <legend class="formLegend">Survey Form</legend>
+                <fieldset class="nameEmailField">
+                    <div class="name">
+                        <label for="fullName">Full Name: </label>
+                        <input type="text" id="fullName" name="full_name" class="firstInput">
+                    </div>
+                    <div class="email">
+                        <label for="email">Email: </label>
+                        <input type="text" id="email" name="email_address" class="emailInput">
+                    </div>
+                </fieldset>
+
+                <fieldset class="genreSelectionField">
+                    <legend>Your Favorite Genre: (check all applicable)</legend>
+
+                    <div class="checkRPG">
+                        <input type="checkbox" id="RPG" name="role_playing">
+                        <label for="RPG" class="RPGLabel">Role Playing Games(RPGS)</label>
+                    </div>
+
+                    <div class="checkRTS">
+                        <input type="checkbox" id="RTS" name="strategy">
+                        <label for="RTS" class="RTSLabel">Real Time Strategy(RTS)</label>
+                    </div>
+
+                    <div class="checkMOBA">
+                        <input type="checkbox" id="MOBA" name="online_battle">
+                        <label for="MOBA" class="MOBALabel">Massive Online Battle Arena(MOBA)</label>
+                    </div>
+
+                    <div class="checkFPS">
+                        <input type="checkbox" id="FPS" name="shooter">
+                        <label for="FPS" class="FPSLabel">First Person Shooter(FPS)</label>
+                    </div>
+
+                    <div class="checkOther">
+                        <input type="checkbox" id="Other" name="Other">
+                        <label for="Other" class="otherLabel">Other:</label>
+                        <textarea style="resize: none;" id="oth" name="oth" maxlength="200"></textarea>
+                    </div>
+                </fieldset>
+
+                <div class="comment">
+                    <label for="comment" class="commentLabel">Comments:</label>
+                    <textarea style="resize: none;" id="comment" name="comment" maxlength="200"></textarea>
+                </div>
+
+                <div class="submit">
+                    <button type="submit">Submit</button>
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>
